@@ -27,7 +27,7 @@ our_list = ['123-string', [0, 1], ['str1', 'str-2'], [empty_list, my_list, your_
 my_list = ["first", 1, 2, 3, 'l', [4, 5, 6, 7]]
 print(len(my_list))  # Hàm len() trả lại số lượng phần tử trong list
 print(my_list[0])
-print(my_list[3])
+print(my_list[3]) # ouput: 3
 print(my_list[5])
 
 # print(my_list[10])  # Lỗi IndexError: list index out of range
@@ -62,21 +62,21 @@ print(my_list)
 # => Luôn luôn là thêm vào cuỗi list gốc trở đi
 your_list = [0, 1, 2]
 your_list.append(3)
-print(your_list)
+print(your_list) # [0, 1, 2, 3]
 your_list.extend([-3, -2, -1])
-print(your_list)
+print(your_list) # [0, 1, 2, -3, -2, -1]
 
 # Phép toán cộng (+) 2 list để ra được list mới - chính là nối 2 list.
 # Phép toán nhân list với số nguyên dương n, để ra được 1 list mới lặp n lần
 our_list = [0, 1]
-print(our_list + [-3, -2, -1])
-print(our_list * 3)
+print(our_list + [-3, -2, -1]) # [0, 1, -3, -2, -1]
+print(our_list * 3) # [0, 1, 0, 1, 0, 1]
 
 # Chèn thêm 1 phần tử mới vào list bằng phương thức insert(index, value)
 # Chèn thêm nhiều phần tử mới vào list bằng cách ép các phần tử đó vào 1 đoạn cắt rỗng [vị_trí_chèn:vị_trí_chèn]
 my_list = [0, 2, 6, 7]
 my_list.insert(2, 4)
-print(my_list)
+print(my_list) # [0, 4, 2, 6, 7]
 my_list[3:3] = [5, -5, -6, -7]  # thử cả với my_list[-3:-3] = [5, -5, -6, -7]
 print(my_list)
 

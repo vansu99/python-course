@@ -139,7 +139,7 @@ print("abc" + "xyz")  # Ra chuỗi
 # print("I am " + 20 + " years old.")  # Lỗi: Type Error
 print("I am " + str(20) + " years old.")  # Ép kiểu sang string
 
-""" Chuyển đổi kiểu dữ liệu - Type Casting
+""" Chuyển đổi kiểu dữ liệu (ép kiểu) - Type Casting
     + Hàm str() chuyển một giá trị thành chuỗi
     + Hàm int() chuyển một giá trị thành số nguyên
     + Hàm float() chuyển một giá trị thành số thực

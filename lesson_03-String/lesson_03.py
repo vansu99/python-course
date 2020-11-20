@@ -240,6 +240,7 @@ print(s.rfind('n'))
 print(s.startswith("Py"))
 print(s.endswith("ing"))
 print(s.replace('is', 'are'))
+print(s[-1]) # lấy ký tự cuối cùng
 
 
 """ Định dạng dữ liệu bằng f-strings
