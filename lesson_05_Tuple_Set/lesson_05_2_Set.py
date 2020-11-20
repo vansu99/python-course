@@ -20,20 +20,20 @@
 my_set = {1, 2, 3, 5, 9}  # Set chứa số nguyên
 print(my_set)
 
-your_set = {'Morning', 0, 3.14, (1, 2, 0, 'Py')}  # Set chưa hỗn hợp các kiểu
+your_set = {'Morning', 0, 3.14, (1, 2, 0, 'Py')}  # Set chứa hỗn hợp các kiểu
 print(your_set)
 
 # Cố tính tạo Set chứa phần tử lặp vào trong Set
 our_set = {1, 0, 0, 1, 2}
-print(our_set)
+print(our_set) # output: {0,1,2}
 
 # Cố tính tạo ra Set chứa phần tử không bất biến
 fuk_set = {[1, 0, 3], 9}  # Lỗi: TypeError: unhashable type: 'list'
 print(fuk_set)
 
-fake_set = {}  # Đây không phải set rỗng, mà là dictionary rỗng
-print(type(fake_set))  # Not empty set, is dictionary
-empty_set = set()  # Khai báo Set rỗng
+fake_set = {}           # Đây không phải set rỗng, mà là dictionary rỗng
+print(type(fake_set))   # Not empty set, is dictionary
+empty_set = set()       # Khai báo Set rỗng
 print(type(empty_set))
 
 
@@ -130,9 +130,6 @@ print(set_02.symmetric_difference(set_01))
     - set.union(*other_set): Trả lại hợp giữa 2 hoặc nhiều set
     - set.update(other_set): Cập nhật set bằng hợp giữa nó và other_set
 """
-
-# Bài tập: Viết chương trình để thử lại các phương thức của Set vừa nói trên
-
 
 """ Các toán tử khác trong Set
     - Kiểm tra tồn tại trong Set: in
