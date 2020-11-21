@@ -95,19 +95,19 @@ print(your_set)
 set_01 = {0, 1, 2, 3, 4, 5, 6}
 set_02 = {5, 6, 7, 8, 9, 0, 1}
 
-print(set_01 | set_02)
+print(set_01 | set_02) # hợp của set_01 và set_02
 print(set_01.union(set_02))
 print(set_02.union(set_01))
 
-print(set_01 & set_02)
+print(set_01 & set_02) # lấy phần chung - output: {0, 1, 5, 6}
 print(set_01.intersection(set_02))
 print(set_02.intersection(set_01))
 
-print(set_01 - set_02)
+print(set_01 - set_02) # lấy các phần tử chỉ có trong set_01 mà không có ở set_02
 print(set_01.difference(set_02))
 print(set_02 - set_01)
 
-print(set_01 ^ set_02)
+print(set_01 ^ set_02) # lấy các phần tử của cả set_01 và set_02 nhưng loại bỏ các phần tử chung của cả 2
 print(set_02.symmetric_difference(set_01))
 
 

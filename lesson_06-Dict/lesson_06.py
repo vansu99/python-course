@@ -8,16 +8,17 @@
 
 """ Dictionary là gì?
     - Là tập hợp các phần tử không có thứ tự
-    - Mỗi phần tử có dạng cặp key: value
+    - Mỗi phần tử có dạng cặp {key: value}
     - Khi biết key có thể truy xuất ra value
 """
 
 """ Làm thế nào để tạo ra một dict?
     - Đặt các phần tử trong cặp ngoặc nhọn {}, cách nhau bởi dấu phẩy
-    - Mỗi phần tử có key và value được biểu thị dưới dạng key: value
-    - value có thể mang bất kì kiểu dữ liệu nào và có thể trùng lặp;
-    còn key thì chỉ được dùng kiểu dữ liệu bất biến (string, number hoặc tuple với các phần tử bất biến) và không lặp
+    - Mỗi phần tử có key và value được biểu thị dưới dạng {key: value}
+    - value có thể mang bất kì kiểu dữ liệu nào và có thể trùng lặp,
+    còn key thì chỉ được dùng kiểu dữ liệu bất biến (string, number hoặc tuple với các phần tử bất biến) và không lặp (unique)
 """
+
 empty_dict = {}  # dict rỗng
 print(empty_dict)
 
@@ -58,10 +59,10 @@ my_dict = {
     'age': 30
 }
 print(my_dict)
-print(my_dict['name'])
-print(my_dict.get('age'))
+print(my_dict['name']) # output: Python
+print(my_dict.get('age')) # output: 30
 
-print(my_dict.get('phone'))  # None
+print(my_dict.get('phone'))  # output: None
 print(my_dict['phone'])  # Lỗi: KeyError: 'phone'
 
 """ Thay đổi hoặc thêm mới phần tử:
@@ -176,6 +177,9 @@ for i in my_dict:  # duyệt như này sẽ là duyệt key
 
 for key in my_dict.keys():
     print(f"Key: {key}, value: {my_dict[key]}")
+
+for key, value in my_dict.items():
+    print(f"Key: {key} - value: {value}")
 
 """ Các phương thức dựng sẵn làm việc với dict
     - all(): Trả lại True nếu các key trong dict là true, hoặc là dict rỗng

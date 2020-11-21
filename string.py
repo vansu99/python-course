@@ -74,8 +74,8 @@ result_o = f'{o} - Developer'
 print(result_o)
 
 name = 'Zendy'
-address = 'Hai Duong'
-phone = '0388171781'
+address = 'HD'
+phone = '038817xxxx'
 result_info = f'Student: {name}\nAddress: {address}\nPhone: {phone}'
 print('infomation: ', result_info)
 
