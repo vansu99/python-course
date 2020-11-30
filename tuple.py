@@ -1,4 +1,3 @@
-# -------------------- Bài 14 -----------------------
 
 # tupple không cho phép sửa chữa nội dung như list
 # được giới hạn bởi cặp ngoặc ()

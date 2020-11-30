@@ -79,6 +79,10 @@ print(s[-len(s) - 1])  # Lỗi vượt quá chỉ số: IndexError: string index
         + => s[:]: trả ra chính chuỗi s
 """
 
+""" Bước nhảy [:]
+    - s[0:2] : lấy các ký tự từ vị trí 0 đến vị trí thứ 2 (loại trừ)
+"""
+
 s = 'Python Core'
 print(s[2:8])
 print(s[0:6])
@@ -212,6 +216,7 @@ for i in range(len(s)):
     s.lstrip()	    Xóa bỏ tất khoảng trắng ở đầu chuỗi s
     s.rstrip()	    Xóa bỏ tất khoảng trắng ở cuối chuỗi s
     s.count(sub)	Đếm số lần xuất hiện của chuỗi sub trong chuỗi s (trả ra số nguyên)
+    s.concatenate() nối lại 
 """
 
 s = " Hello. i am plusPlus!    "

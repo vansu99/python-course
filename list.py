@@ -61,3 +61,4 @@ u[0][0] = 'zendy'
 print('t: ', t) # [['zendy', 2, 3], [4, 5, 6]]
 print('u: ', u) # [['zendy', 2, 3], [4, 5, 6]]
 
+# tham khảo: https://www.stdio.vn/python/tim-hieu-ve-lists-trong-python-jkcg22
