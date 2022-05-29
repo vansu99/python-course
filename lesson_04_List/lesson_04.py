@@ -167,6 +167,9 @@ for lg in languages:
 
 
 # List Comprehension: Tạo một list mới từ list cũ một cách bao quát
+
+# Syntax: new_list[<expression> for <list> in <list> if <some condition>]
+
 # Ví dụ: Sinh một list chứa 5 số đầu của dãy số với công thức tổng quát: Un = 5n^2/(n+1)
 s_number = [5*i**2/(i+1) for i in range(5)]
 print(s_number)
@@ -180,6 +183,3 @@ print([x+y for x in languages for y in keys])  # Trong for còn có for
 random = [8, 1, 2, 5, 6, 0, 7, 9]
 new_list = [x for x in random if x % 2 == 0]
 print(new_list)
-
-
-
